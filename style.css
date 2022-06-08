@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Work Sans', sans-serif;
+    /* font color white */
+    color: white;
+    /* size of font */
+    font-size: 17px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none; 
+    height: 50px;
+    background-color: black;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+.logo img{
+    width: 35px;
+}
+
+.container{
+    min-height: 70vh;
+    background-color:black;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 25px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    /* flexbox direction */
+    flex-direction: column;
+
+}
+
+.songlist{
+    display: flex;
+    flex-direction: column;
+}
+
+.songitem{
+    height: 50px;
+    display: flex; 
+    background-color: #fff;
+    color: #000;
+    margin: 15px auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    opacity: 0.8;
+}
+
+.songitem img{
+    width: 45px;
+    border-radius: 100%;
+    margin: 0 5px;
+
+}
+
+.timestamp{
+    margin: 0 20px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    height:80px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#progress{
+    width: 90%;
+    text-align: center; 
+    cursor:  pointer;
+}
+
+.songinfo{
+    position: absolute ;
+    left:7vw;
+    font-family: Poppins;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
